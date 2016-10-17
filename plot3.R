@@ -11,7 +11,7 @@ d$Sub_metering_1 <- as.numeric(d$Sub_metering_1)
 d$Sub_metering_2 <- as.numeric(d$Sub_metering_2)
 d$Sub_metering_3 <- as.numeric(d$Sub_metering_3)
 
-png(filename = "plot3.png")
+png(filename = "plot3.png", width=480, height=480, units="px")
 plot(d$DateTime, d$Sub_metering_1, type = "n", ylab = "Energy sub metering", xlab = "")
     lines(d$DateTime, d$Sub_metering_1, col = "black")
     lines(d$DateTime, d$Sub_metering_2, col = "red")
